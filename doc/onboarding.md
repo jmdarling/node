@@ -186,7 +186,7 @@ Landing a PR
   * If `git am` fails, see [the relevant section of the Onboarding Extras doc](./onboarding-extras.md#if-git-am-fails).
 * `git rebase -i upstream/master`
 * Squash into logical commits if necessary.
-* `./configure && make -j8 test` (`-j8` builds node in parallel with 8 threads. adjust to the number of cores (or processor-level threads) your processor has (or slightly more) for best results.)
+* `./configure && make -j4 test` (`-j4` builds node in parallel with 4 threads. adjust to the number of cores (or processor-level threads) your processor has (or slightly more) for best results.)
 * Amend the commit description.
   * The commit message text must conform to the [commit message guidelines](../CONTRIBUTING.md#step-3-commit).
   * Add required metadata:
